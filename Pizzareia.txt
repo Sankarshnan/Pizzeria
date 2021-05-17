@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>ADV-C79 PIZZERIA</title>
+    </head>
+    
+    <style>
+    body{
+
+        text-align: center;
+        background-color: chartreuse;
+    }
+    button{
+      background-color: rgb(255, 230, 0);
+      height: 50px;
+      font-size: 40px;
+      text-align: center;
+
+    }
+    a{
+        font-size: 30px;
+    }
+
+    viewblock{
+        text-align: left;
+
+    }
+    
+    
+    </style>
+    <body>
+        
+        <div class="topnav">
+            <a class="active" href="#">Pizzeria</a>
+            <div class="topnav-right">
+             <a href="#viewblock">View Menu</a>
+             <a href="#addTopings">Add Menu</a>
+            </div>
+        </div>
+        <h1>Welcome to my PIZZERIA</h1>
+        <div class="row" id="viewblock">
+            <span class="img_div"> 
+                <img class="img-responsive"  height="500" width="500" src="Pizzeria.jpg">
+            </span>
+            <span class="menu_div">
+                <button id="menu_list" onclick="getmenu()">Show Menu</button>
+               <div id="display_menu"></div>
+            </span>
+        
+        <span class="newRow" id="addTopings">
+            <span class="block1">
+                <input id="add_item" placeholder="Type here to add toppings?"> 
+                <!--- Create button--->
+                <button id="add_toppings" onclick="add_item()">Show Pizza</button>
+            </span>
+            
+            <span class="block2">
+                <span id="display_addedmenu">
+                </span>
+            </span>
+            
+            <span>
+                <img class="img-responsive" height ="200" width="500" src="https://static.vecteezy.com/system/resources/thumbnails/000/695/633/small/a-set-of-pizza-toppings.jpg">
+            </span>
+
+        </span>
+    
+        
+        </div>
+
+
+        
+    <script src="main.js"></script>  
+    </body>
+</html>
